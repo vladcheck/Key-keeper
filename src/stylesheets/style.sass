@@ -25,10 +25,11 @@ header
     text-align: center
 
 main
+    $cell-size: 10rem
     flex: 1
     display: grid
-    grid-template-columns: repeat(auto-fill, 8rem)
-    grid-auto-rows: 8rem
+    grid-template-columns: repeat(auto-fill, $cell-size)
+    grid-auto-rows: $cell-size
     gap: 1rem
     justify-items: center
     align-items: center
@@ -39,3 +40,16 @@ main
     background: yellow
     width: 100%
     height: 100%
+    padding: 0.5rem
+
+.light
+    $size: 1.5rem
+    border-radius: 100%
+    background: black
+    border: 3px solid grey
+    width: $size
+    height: $size
+    margin: auto
+
+.light.on
+    background: red
