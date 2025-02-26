@@ -1,1 +1,28 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
 
+:root
+    font-size: 16px
+
+body
+    width: 100vw
+    height: 100vh
+    gap: 1rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+header, main
+    width: 100%
+
+header
+    $height: 6rem
+    height: $height
+    padding: calc($height / 4)
+    text-align: center
+
+main
+    flex: 1
