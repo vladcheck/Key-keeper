@@ -1,14 +1,13 @@
 import { Light } from "./Light";
 
 export interface KeyProps {
-  isOn?: boolean;
   id: string;
 }
 
 
-export function Key({id}: KeyProps) {
+export function Key(props: KeyProps) {
   return (
-    <div className="key" key={id}>
+    <div className="key" key={props.id}>
       <Light />
     </div>
   );
