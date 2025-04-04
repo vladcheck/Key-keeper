@@ -24,6 +24,7 @@
     "jsx": "react-jsx" // or "react-native"
   },
   "include": [
-    "src"
+    "server",
+    "frontend"
   ],
 }
